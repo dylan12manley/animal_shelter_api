@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_01_31_173112) do
     t.string "city"
     t.string "state"
     t.string "address"
-    t.integer "phone_number"
+    t.string "phone_number"
   end
 
   add_foreign_key "animals", "shelters"

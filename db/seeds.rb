@@ -5,19 +5,19 @@
     city: Faker::Address.city,
     state: Faker::Address.state,
     address: Faker::Address.street_address,
-    phone_number: 9710
+    phone_number: Faker::PhoneNumber.cell_phone
   )
-  2.times do
-    @shelter.animals.new(
-    name: Faker::Creature::Cat.name,
-    species: "Cat",
-    breed: Faker::Creature::Cat.breed,
-    sex: "Female",
-    age: rand(14),
-    status: "available",
-    shelter_id: nil)
-    @shelter.save
-  end
+  # 2.times do
+  #   @shelter.animals.new(
+  #   name: Faker::Creature::Cat.name,
+  #   species: "Cat",
+  #   breed: Faker::Creature::Cat.breed,
+  #   sex: "Female",
+  #   age: rand(14),
+  #   status: "available",
+  #   shelter_id: nil)
+  #   @shelter.save
+  # end
   # 2.times do
   #   @shelter.animals.new(
   #   name: Faker::Creature::Cat.name,

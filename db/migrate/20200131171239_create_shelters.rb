@@ -5,7 +5,7 @@ class CreateShelters < ActiveRecord::Migration[6.0]
       t.column(:city, :string)
       t.column(:state, :string)
       t.column(:address, :string)
-      t.column(:phone_number, :integer)
+      t.column(:phone_number, :string)
     end
   end
 end
