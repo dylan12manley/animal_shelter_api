@@ -35,6 +35,6 @@ end
   end
 
   def animal_params
-    params.permit(:name, :species, :breed, :sex, :age, :status)
+    params.permit(:name, :species, :breed, :sex, :age, :status, :shelter_id)
   end
 end
