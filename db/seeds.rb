@@ -1,7 +1,43 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+15.times do |i|
+  @shelter = Shelter.create!(
+    shelter_name: Faker::Address.community
+    city: Faker::Address.city,
+    state: Faker::Address.state,
+    address: Faker::Address.street_address,
+    phone_number: rand(9710000000)
+  )
+  2.times do
+    @shelter.animals.new(
+    name: Faker::Creature::Cat.name,
+    species: "Cat",
+    breed: Faker::Creature::Cat.breed,
+    sex: "Female",
+    age: rand(14),
+    status: "available",
+    shelter_id: nil)
+    @shelter.save
+  end
+  2.times do
+    @shelter.animals.new(
+    name: Faker::Creature::Cat.name,
+    species: Faker::Creature::Animal.name,
+    breed: "unknown",
+    sex: "na",
+    age: rand(14),
+    status: "available",
+    shelter_id: nil)
+    @shelter.save
+  end
+  2.times do
+    @shelter.animals.new(
+    name: Faker::FunnyName.two_word_name,
+    species: "Dog",
+    breed: Faker::Creature::Dog.breed,
+    sex: "Male",
+    age: rand(14),
+    status: "reserved",
+    shelter_id: nil)
+    @shelter.save
+  end
+end
