@@ -7,20 +7,21 @@
     state: Faker::Address.state,
     address: Faker::Address.street_address,
     phone_number: Faker::PhoneNumber.cell_phone)
+
+    5.times do |a|
+      @shelter.animals.new(
+        name: Faker::Creature::Cat.name,
+        species: "Cat",
+        breed: Faker::Creature::Cat.breed,
+        sex: "Female",
+        age: rand(14),
+        status: "available",
+        shelter_id: rand(200))
+      end
 end
 
 # Animal.destroy_all
 
-  500.times do |a|
-    @animal = Animal.create(
-    name: Faker::Creature::Cat.name,
-    species: "Cat",
-    breed: Faker::Creature::Cat.breed,
-    sex: "Female",
-    age: rand(14),
-    status: "available",
-    shelter_id: rand(200))
-  end
 
   p "Created #{Shelter.count} shelters, and #{Animal.count} animals,"
   # 2.times do
