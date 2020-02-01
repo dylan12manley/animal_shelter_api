@@ -39,7 +39,7 @@ class SheltersController < ApplicationController
     @shelter = Shelter.find(params[:id])
     if @shelter.destroy!
       render status: 200, json: {
-        message: 'This shelter has been destoryed'
+        message: 'This shelter has been destoryed.'
       }
     end
   end
