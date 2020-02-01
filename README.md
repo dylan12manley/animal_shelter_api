@@ -13,13 +13,15 @@ By Dylan Manley
 * Enter "rails s" in the terminal
 * Api is now up and running!
 
-## Endpoints 
+## Endpoints
 
 #### Get
 * localhost:3000/shelters (returns all shelters)
 * localhost:3000/shelters/:shelter_id (returns shelter with corresponding ID")
 * localhost:3000/shelters/:shelter_id/animals (returns all animals with corresponding shelter_id")
 * localhost:3000/shelters/:shelter_id/animals/:id (returns specified animal based on ID)
+* localhost:3000/shelters/random (returns a random shelter)
+* localhost:3000/shelters/search (returns shelters with parameters matching the search term)
 
 #### DELETE
 * localhost:3000/shelters/:shelter_id (deletes shelter with corresponding id)
