@@ -37,7 +37,11 @@ class SheltersController < ApplicationController
 
   def destroy
     @shelter = Shelter.find(params[:id])
-    @shelter.destroy
+    if @shelter.destroy!
+      render status: 200, json: {
+        message: 'This shelter has been destoryed'
+      }
+    end
   end
 
   private
