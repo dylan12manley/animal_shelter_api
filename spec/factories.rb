@@ -4,6 +4,6 @@ FactoryBot.define do
   end
   factory :animal do
     name {'Doggy'}
-    shelter_id {1}
+    shelter_id {2}
   end
 end

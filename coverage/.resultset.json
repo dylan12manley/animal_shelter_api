@@ -339,8 +339,8 @@
           1,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           1,
@@ -369,7 +369,7 @@
           null,
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -600,6 +600,17 @@
         "lines": [
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           null,
           null,
           null,
@@ -607,9 +618,14 @@
           null,
           null,
           null,
+          1,
           null,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           null
@@ -634,7 +650,7 @@
           null
         ]
       },
-      "C:/Users/dylan/Desktop/animal_shelter_api/spec/requests/post_route_spec.rb": {
+      "C:/Users/dylan/Desktop/animal_shelter_api/spec/requests/post_shelter_spec.rb": {
         "lines": [
           1,
           null,
@@ -703,6 +719,6 @@
         ]
       }
     },
-    "timestamp": 1580586983
+    "timestamp": 1580588905
   }
 }
