@@ -7,9 +7,7 @@ class SheltersController < ApplicationController
 
   def show
     if params[:search]
-      @shelters = @shelters.search(params[:search])
-    else params[:random]
-      @shelters = @shelters.random
+      @shelter = @shelter.search(params[:search])
     else
       @shelter = Shelter.find(params[:id])
     end
