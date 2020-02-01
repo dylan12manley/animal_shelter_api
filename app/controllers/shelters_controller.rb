@@ -6,8 +6,21 @@ class SheltersController < ApplicationController
   end
 
   def show
-    @shelter = Shelter.find(params[:id])
-    json_response(@shelter)
+    if params[:search]
+      @shelters = @shelters.search(params[:search])
+    else params[:random]
+      @shelters = @shelters.random
+    else
+      @shelter = Shelter.find(params[:id])
+    end
+      json_response(@shelter)
+  end
+
+  def search
+    if params[:search]
+      @shelters = @shelters.search(params[:search])
+    end
+    json_response(@shelters)
   end
 
   def create
