@@ -11,6 +11,7 @@ By Dylan Manley
 * Enter "rake db:create" in the terminal
 * Enter "rake db:migrate" in the terminal
 * Enter "rake db:seed" in the terminal
+* Enter "rails db:migrate Rails_ENV=test" in the terminal
 * Enter "rails s" in the terminal
 * Api is now up and running with seeded data!
 
@@ -19,9 +20,8 @@ By Dylan Manley
 #### Get
 * localhost:3000/shelters (returns all shelters)
 * localhost:3000/shelters/:shelter_id (returns shelter with corresponding ID")
-* localhost:3000/shelters/:shelter_id/animals (returns all animals with corresponding shelter_id")
+* localhost:3000/shelters/:shelter_id/animals (returns all animals")
 * localhost:3000/shelters/:shelter_id/animals/:id (returns specified animal based on ID)
-* localhost:3000/shelters/search (returns shelters with parameters matching the search term)
 
 #### DELETE
 * localhost:3000/shelters/:shelter_id (deletes shelter with corresponding id)
